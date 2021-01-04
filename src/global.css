@@ -1,0 +1,15 @@
+body{
+    /* 隐藏滚动条 */
+    overflow: hidden;
+}
+
+#page {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+#page>section{
+    border: 1px solid grey;
+    width: 50vw;
+    height: 50vh;
+}

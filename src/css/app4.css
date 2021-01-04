@@ -1,0 +1,26 @@
+#app4 .circle{
+    height: 10vw;
+    width: 10vw;
+    margin-top: 5vh;
+    margin-left: 5vw;
+    border: 1px solid red;
+    border-radius: 50%;
+}
+
+#app4 .circle.active{
+    animation: change 1s infinite reverse;
+}
+
+@keyframes change {
+    0%{
+        background-color: antiquewhite;
+    }
+
+    50% {
+        background-color: aqua;
+    }
+
+    100% {
+        background-color: brown;
+    }
+}

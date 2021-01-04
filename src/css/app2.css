@@ -1,0 +1,35 @@
+#app2 {
+
+}
+
+#app2 .tab-bar{
+    display: flex;
+    border: 1px solid red;
+    justify-content: space-around;
+}
+
+#app2 .tab-bar > li{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50vw;
+    height: 5vh;
+    border: 1px solid green;
+}
+
+#app2 .tab-content{
+    background-color: antiquewhite;
+}
+
+
+#app2 .tab-content li {
+    display: none;
+}
+
+#app2 .tab-content li.active {
+    display: block;
+}
+
+.selected {
+    background-color: cadetblue;
+}

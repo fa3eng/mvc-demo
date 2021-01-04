@@ -1,0 +1,116 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+*::before,::after{
+    box-sizing: border-box;
+}
+
+ul, ol{
+    list-style: none;
+}
+body{
+    /* 隐藏滚动条 */
+    overflow: hidden;
+}
+
+#page {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+#page>section{
+    border: 1px solid grey;
+    width: 50vw;
+    height: 50vh;
+}
+#app1 {
+}
+#app1 .output{
+}
+#app1 .actions button{
+    width: 3vw;
+    height: 3vw;
+}
+#app2 {
+
+}
+
+#app2 .tab-bar{
+    display: flex;
+    border: 1px solid red;
+    justify-content: space-around;
+}
+
+#app2 .tab-bar > li{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50vw;
+    height: 5vh;
+    border: 1px solid green;
+}
+
+#app2 .tab-content{
+    background-color: antiquewhite;
+}
+
+
+#app2 .tab-content li {
+    display: none;
+}
+
+#app2 .tab-content li.active {
+    display: block;
+}
+
+.selected {
+    background-color: cadetblue;
+}
+
+#app3 {
+
+}
+
+#app3 .square {
+    margin: 3vh;
+    height: 10vw;
+    width: 10vw;
+    border: 1px solid red;
+    transition: transform 1s;
+}
+
+#app3 .square.active {
+    transform: translateX(20vw);
+}
+
+#app4 .circle{
+    height: 10vw;
+    width: 10vw;
+    margin-top: 5vh;
+    margin-left: 5vw;
+    border: 1px solid red;
+    border-radius: 50%;
+}
+
+#app4 .circle.active{
+    animation: change 1s infinite reverse;
+}
+
+@keyframes change {
+    0%{
+        background-color: antiquewhite;
+    }
+
+    50% {
+        background-color: aqua;
+    }
+
+    100% {
+        background-color: brown;
+    }
+}
+
+/*# sourceMappingURL=/main.1f19ae8e.css.map */
